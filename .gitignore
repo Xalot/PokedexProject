@@ -1,0 +1,17 @@
+# Node.js (Angular)
+frontend/node_modules/
+frontend/dist/
+
+# ASP.NET (Backend)
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/wwwroot/
+
+# General
+.DS_Store
+.env
+
+# Exclude Visual Studio specific files
+*.user
+*.suo
