@@ -31,7 +31,7 @@ La aplicación cuenta con autenticación mediante JWT y un sistema de auditoría
 
 A continuación se muestra el diagrama entidad-relación (ER) del proyecto, que define las relaciones entre usuarios, logs de auditoría y datos obtenidos de la PokeAPI.
 
-![Diagrama ER](/Diagrama ER Pokedex.png)
+![Diagrama ER](/DiagramaERPokedex.png)
 
 ## Diagrama de Arquitectura
 
