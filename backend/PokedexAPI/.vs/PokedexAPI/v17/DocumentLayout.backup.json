@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\migrations\\20240920204504_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:migrations\\20240920204504_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-20T20:58:32.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240920204504_Inicial.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Migrations\\20240920204504_Inicial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240920204504_Inicial.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Migrations\\20240920204504_Inicial.cs",
+              "RelativeToolTip": "Migrations\\20240920204504_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T20:45:06.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T20:28:12.254Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

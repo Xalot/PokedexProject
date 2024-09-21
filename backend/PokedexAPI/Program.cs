@@ -1,4 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using PokedexAPI.Repositories;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurar el contexto de datos con la cadena de conexión
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Registrar el repositorio en el contenedor de dependencias
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Add services to the container.
 

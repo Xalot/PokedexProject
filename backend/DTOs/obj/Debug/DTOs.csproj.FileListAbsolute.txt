@@ -1,0 +1,6 @@
+C:\Trabajo\PokedexProject\backend\DTOs\bin\Debug\DTOs.dll
+C:\Trabajo\PokedexProject\backend\DTOs\bin\Debug\DTOs.pdb
+C:\Trabajo\PokedexProject\backend\DTOs\obj\Debug\DTOs.csproj.AssemblyReference.cache
+C:\Trabajo\PokedexProject\backend\DTOs\obj\Debug\DTOs.csproj.CoreCompileInputs.cache
+C:\Trabajo\PokedexProject\backend\DTOs\obj\Debug\DTOs.dll
+C:\Trabajo\PokedexProject\backend\DTOs\obj\Debug\DTOs.pdb
