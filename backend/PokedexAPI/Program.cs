@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PokedexAPI.Repositories;
+using PokedexAPI.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Registrar el repositorio en el contenedor de dependencias
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// Registrar el servicio de usuarios
+builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
 
 // Add services to the container.
 
