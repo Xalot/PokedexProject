@@ -1,6 +1,12 @@
 ﻿using DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using PokedexAPI.Services;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace PokedexAPI.Controllers
@@ -10,11 +16,23 @@ namespace PokedexAPI.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IConfiguration _configuration;
 
-        public AuthController(IUserService userService)
+        public AuthController(IUserService userService, IConfiguration configuration)
         {
             _userService = userService;
+            _configuration = configuration;
+
         }
+
+        [Authorize]
+        [HttpGet("getUsers")]
+        public async Task<IActionResult> GetUsers()
+        {
+            var users = await _userService.GetAllUsersAsync();
+            return Ok(users);
+        }
+
 
         // Registro de usuario
         [HttpPost("register")]
@@ -24,18 +42,32 @@ namespace PokedexAPI.Controllers
             return Ok(new { message = "Usuario registrado exitosamente" });
         }
 
-        // Iniciar sesión (Esto después se modificará para manejar JWT)
         [HttpPost("login")]
         public async Task<IActionResult> Login(string username, string password)
         {
             var user = await _userService.GetUserByUsernameAsync(username);
 
-            if (user == null || user.PasswordHash != password) // Simplificado
+            if (user == null || user.PasswordHash != password)
                 return Unauthorized(new { message = "Credenciales incorrectas" });
 
-            // Aquí se generará y devolverá el token JWT en el futuro
-            return Ok(new { message = "Inicio de sesión exitoso" });
+            // Generar token JWT
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[] {
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+        }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            return Ok(new { token = tokenString });
         }
+
 
     }
 }

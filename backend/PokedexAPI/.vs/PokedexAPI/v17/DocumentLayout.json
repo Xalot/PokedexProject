@@ -3,10 +3,8 @@
   "WorkspaceRootPath": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F4BAAB9-9902-4D1B-8136-37C734B189B1}|..\\DTOs\\DTOs.csproj|c:\\trabajo\\pokedexproject\\backend\\dtos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F4BAAB9-9902-4D1B-8136-37C734B189B1}|..\\DTOs\\DTOs.csproj|c:\\trabajo\\pokedexproject\\backend\\dtos\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\User.cs",
-              "RelativeDocumentMoniker": "..\\DTOs\\User.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\User.cs",
-              "RelativeToolTip": "..\\DTOs\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA7wDYAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T03:10:51.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuditLog.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\AuditLog.cs",
-              "RelativeDocumentMoniker": "..\\DTOs\\AuditLog.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\AuditLog.cs",
-              "RelativeToolTip": "..\\DTOs\\AuditLog.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T03:07:39.335Z",
+              "WhenOpened": "2024-09-23T23:24:33.658Z",
               "EditorCaption": ""
             }
           ]
