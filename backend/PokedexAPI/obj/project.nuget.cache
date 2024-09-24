@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HLst3zBvL5o=",
+  "dgSpecHash": "Ea5rt7XPte4=",
   "success": true,
   "projectFilePath": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sushi\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\sushi\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\sushi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\sushi\\.nuget\\packages\\log4net\\3.0.0\\log4net.3.0.0.nupkg.sha512",
     "C:\\Users\\sushi\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.8\\microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
     "C:\\Users\\sushi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\sushi\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

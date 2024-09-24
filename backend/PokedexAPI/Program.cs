@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;  
+using Microsoft.OpenApi.Models;
+using log4net;
+using log4net.Config;
+using System.Reflection;
 using System.Text;
 using PokedexAPI.Repositories;
 using PokedexAPI.Services;
@@ -10,6 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configurar JWT Authentication
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new ArgumentNullException("Jwt:Key is missing from configuration"));
+
+// Configurar log4net
+var loggerRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+XmlConfigurator.Configure(loggerRepository, new FileInfo("log4net.config"));
 
 builder.Services.AddAuthentication(options =>
 {
