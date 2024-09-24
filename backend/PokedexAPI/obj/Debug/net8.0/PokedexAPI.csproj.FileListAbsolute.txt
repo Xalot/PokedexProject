@@ -137,3 +137,4 @@ C:\Trabajo\PokedexProject\backend\PokedexAPI\obj\Debug\net8.0\refint\PokedexAPI.
 C:\Trabajo\PokedexProject\backend\PokedexAPI\obj\Debug\net8.0\PokedexAPI.pdb
 C:\Trabajo\PokedexProject\backend\PokedexAPI\obj\Debug\net8.0\PokedexAPI.genruntimeconfig.cache
 C:\Trabajo\PokedexProject\backend\PokedexAPI\obj\Debug\net8.0\ref\PokedexAPI.dll
+C:\Trabajo\PokedexProject\backend\PokedexAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
