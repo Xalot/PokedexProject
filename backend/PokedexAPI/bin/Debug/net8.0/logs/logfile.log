@@ -1,0 +1,6 @@
+2024-09-24 13:20:10,409 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-24 13:20:10,434 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-24 13:20:10,437 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-24 13:20:13,613 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-24 13:20:13,614 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-24 13:20:13,666 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
