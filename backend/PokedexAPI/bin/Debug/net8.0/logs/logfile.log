@@ -4,3 +4,459 @@
 2024-09-24 13:20:13,613 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
 2024-09-24 13:20:13,614 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
 2024-09-24 13:20:13,666 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-24 14:03:34,394 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-24 14:03:34,406 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-24 14:03:34,407 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-24 14:03:38,254 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-24 14:03:38,255 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-24 14:03:38,319 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-24 14:24:17,328 INFO  PokedexAPI.Controllers.AuthController - Intentando registrar usuario: testuser4
+2024-09-24 14:24:17,336 INFO  PokedexAPI.Services.UserService - Intentando agregar usuario: testuser4
+2024-09-24 14:24:17,346 INFO  PokedexAPI.Repositories.UserRepository - Intentando agregar un nuevo usuario: testuser4
+2024-09-24 14:24:20,115 ERROR PokedexAPI.Repositories.UserRepository - Error al agregar el usuario testuser4.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+2024-09-24 14:24:20,280 ERROR PokedexAPI.Services.UserService - Error al agregar usuario testuser4
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+   at PokedexAPI.Services.UserService.AddUserAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 67
+2024-09-24 14:24:20,408 ERROR PokedexAPI.Controllers.AuthController - Error al registrar usuario testuser4
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+   at PokedexAPI.Services.UserService.AddUserAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 67
+   at PokedexAPI.Controllers.AuthController.Register(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Controllers\AuthController.cs:line 54
+2024-09-24 14:25:15,304 INFO  PokedexAPI.Controllers.AuthController - Intentando registrar usuario: testuser4
+2024-09-24 14:25:15,305 INFO  PokedexAPI.Services.UserService - Intentando agregar usuario: testuser4
+2024-09-24 14:25:15,305 INFO  PokedexAPI.Repositories.UserRepository - Intentando agregar un nuevo usuario: testuser4
+2024-09-24 14:25:15,659 ERROR PokedexAPI.Repositories.UserRepository - Error al agregar el usuario testuser4.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+2024-09-24 14:25:15,768 ERROR PokedexAPI.Services.UserService - Error al agregar usuario testuser4
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+   at PokedexAPI.Services.UserService.AddUserAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 67
+2024-09-24 14:25:15,876 ERROR PokedexAPI.Controllers.AuthController - Error al registrar usuario testuser4
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:9fef33e5-116b-4e2c-9c42-6c820cba79de
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.UserRepository.AddAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\UserRepository.cs:line 67
+   at PokedexAPI.Services.UserService.AddUserAsync(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 67
+   at PokedexAPI.Controllers.AuthController.Register(User user) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Controllers\AuthController.cs:line 54
+2024-09-24 14:25:23,101 INFO  PokedexAPI.Controllers.AuthController - Intentando registrar usuario: string
+2024-09-24 14:25:23,102 INFO  PokedexAPI.Services.UserService - Intentando agregar usuario: string
+2024-09-24 14:25:23,102 INFO  PokedexAPI.Repositories.UserRepository - Intentando agregar un nuevo usuario: string
+2024-09-24 14:25:23,358 INFO  PokedexAPI.Repositories.UserRepository - Usuario string agregado correctamente.
+2024-09-24 14:25:23,360 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Registro de nuevo usuario para el usuario con ID: 4
+2024-09-24 14:25:23,471 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 4
+2024-09-24 14:25:23,471 INFO  PokedexAPI.Services.UserService - Usuario string agregado correctamente
+2024-09-24 14:25:23,471 INFO  PokedexAPI.Controllers.AuthController - Usuario string registrado correctamente
+2024-09-24 14:25:35,335 INFO  PokedexAPI.Controllers.AuthController - Intentando registrar usuario: string
+2024-09-24 14:25:35,335 INFO  PokedexAPI.Services.UserService - Intentando agregar usuario: string
+2024-09-24 14:25:35,335 INFO  PokedexAPI.Repositories.UserRepository - Intentando agregar un nuevo usuario: string
+2024-09-24 14:25:35,363 INFO  PokedexAPI.Repositories.UserRepository - Usuario string agregado correctamente.
+2024-09-24 14:25:35,363 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Registro de nuevo usuario para el usuario con ID: 5
+2024-09-24 14:25:35,375 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 5
+2024-09-24 14:25:35,375 INFO  PokedexAPI.Services.UserService - Usuario string agregado correctamente
+2024-09-24 14:25:35,375 INFO  PokedexAPI.Controllers.AuthController - Usuario string registrado correctamente
+2024-09-24 14:55:48,106 INFO  PokedexAPI.Controllers.AuthController - Intentando registrar usuario: string
+2024-09-24 14:55:48,119 INFO  PokedexAPI.Services.UserService - Intentando agregar usuario: string
+2024-09-24 14:55:48,120 INFO  PokedexAPI.Repositories.UserRepository - Intentando agregar un nuevo usuario: string
+2024-09-24 14:55:49,450 INFO  PokedexAPI.Repositories.UserRepository - Usuario string agregado correctamente.
+2024-09-24 14:55:49,450 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Registro de nuevo usuario para el usuario con ID: 6
+2024-09-24 14:55:49,504 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 6
+2024-09-24 14:55:49,505 INFO  PokedexAPI.Services.UserService - Usuario string agregado correctamente
+2024-09-24 14:55:49,505 INFO  PokedexAPI.Controllers.AuthController - Usuario string registrado correctamente
+2024-09-24 14:55:52,464 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-24 14:55:52,464 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-24 14:55:52,465 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-24 14:55:52,542 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-24 14:55:52,542 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-24 14:55:52,566 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-24 15:16:32,269 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-24 15:16:32,275 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-24 15:16:32,277 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-24 15:16:35,078 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-24 15:16:35,079 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-24 15:16:35,121 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-24 15:55:24,507 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-24 15:55:24,526 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-24 15:55:24,529 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-24 15:55:28,320 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-24 15:55:28,320 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-24 15:55:28,360 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-24 15:55:57,579 INFO  PokedexAPI.Controllers.AuthController - Intentando obtener todos los usuarios
+2024-09-24 15:55:57,581 INFO  PokedexAPI.Services.UserService - Obteniendo todos los usuarios
+2024-09-24 15:55:57,583 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener todos los usuarios.
+2024-09-24 15:55:57,730 INFO  PokedexAPI.Repositories.UserRepository - Usuarios obtenidos correctamente.
+2024-09-24 15:55:57,730 INFO  PokedexAPI.Services.UserService - Usuarios obtenidos correctamente
+2024-09-24 15:55:57,731 INFO  PokedexAPI.Controllers.AuthController - Usuarios obtenidos correctamente
+2024-09-24 15:56:22,285 INFO  PokedexAPI.Controllers.AuthController - Intentando eliminar usuario con ID: 6
+2024-09-24 15:56:22,286 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con ID: 6
+2024-09-24 15:56:22,287 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con ID 6.
+2024-09-24 15:56:22,498 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 6 obtenido correctamente.
+2024-09-24 15:56:22,498 INFO  PokedexAPI.Services.UserService - Usuario encontrado: string
+2024-09-24 15:56:22,503 INFO  PokedexAPI.Services.UserService - Intentando eliminar usuario con ID: 6
+2024-09-24 15:56:22,505 INFO  PokedexAPI.Repositories.UserRepository - Intentando eliminar el usuario con ID 6.
+2024-09-24 15:56:23,026 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 6 eliminado correctamente.
+2024-09-24 15:56:23,029 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Eliminación de usuario para el usuario con ID: 6
+2024-09-24 15:56:23,488 ERROR PokedexAPI.Repositories.AuditLogRepository - Error al registrar acción Eliminación de usuario para el usuario con ID 6.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+2024-09-24 15:56:23,656 ERROR PokedexAPI.Services.UserService - Error al eliminar usuario con ID 6
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+   at PokedexAPI.Services.UserService.DeleteUserAsync(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 100
+2024-09-24 15:56:23,786 ERROR PokedexAPI.Controllers.AuthController - Error al eliminar usuario con ID 6
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+   at PokedexAPI.Services.UserService.DeleteUserAsync(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 100
+   at PokedexAPI.Controllers.AuthController.DeleteUser(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Controllers\AuthController.cs:line 122
+2024-09-24 15:56:30,540 INFO  PokedexAPI.Controllers.AuthController - Intentando eliminar usuario con ID: 5
+2024-09-24 15:56:30,541 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con ID: 5
+2024-09-24 15:56:30,542 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con ID 5.
+2024-09-24 15:56:30,579 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 5 obtenido correctamente.
+2024-09-24 15:56:30,579 INFO  PokedexAPI.Services.UserService - Usuario encontrado: string
+2024-09-24 15:56:30,579 INFO  PokedexAPI.Services.UserService - Intentando eliminar usuario con ID: 5
+2024-09-24 15:56:30,579 INFO  PokedexAPI.Repositories.UserRepository - Intentando eliminar el usuario con ID 5.
+2024-09-24 15:56:30,715 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 5 eliminado correctamente.
+2024-09-24 15:56:30,715 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Eliminación de usuario para el usuario con ID: 5
+2024-09-24 15:56:30,795 ERROR PokedexAPI.Repositories.AuditLogRepository - Error al registrar acción Eliminación de usuario para el usuario con ID 5.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+2024-09-24 15:56:30,879 ERROR PokedexAPI.Services.UserService - Error al eliminar usuario con ID 5
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+   at PokedexAPI.Services.UserService.DeleteUserAsync(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 100
+2024-09-24 15:56:30,968 ERROR PokedexAPI.Controllers.AuthController - Error al eliminar usuario con ID 5
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AuditLogs_Users_UserId". The conflict occurred in database "UsuariosPokedex", table "dbo.Users", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:510b5307-536e-4f8d-bc79-587ff8f0a0da
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PokedexAPI.Repositories.AuditLogRepository.LogActionAsync(Int32 userId, String action) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Repositories\AuditLogRepository.cs:line 30
+   at PokedexAPI.Services.UserService.DeleteUserAsync(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Services\UserService.cs:line 100
+   at PokedexAPI.Controllers.AuthController.DeleteUser(Int32 id) in C:\Trabajo\PokedexProject\backend\PokedexAPI\Controllers\AuthController.cs:line 122
+2024-09-24 15:56:41,575 INFO  PokedexAPI.Controllers.AuthController - Intentando eliminar usuario con ID: 5
+2024-09-24 15:56:41,576 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con ID: 5
+2024-09-24 15:56:41,576 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con ID 5.
+2024-09-24 15:56:41,588 WARN  PokedexAPI.Repositories.UserRepository - Usuario con ID 5 no encontrado.
+2024-09-24 15:56:41,589 WARN  PokedexAPI.Services.UserService - Usuario con ID 5 no encontrado
+2024-09-24 15:56:41,589 WARN  PokedexAPI.Controllers.AuthController - Usuario con ID 5 no encontrado
+2024-09-24 15:57:34,132 INFO  PokedexAPI.Controllers.AuthController - Intentando actualizar usuario con ID: 4
+2024-09-24 15:57:34,134 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con ID: 4
+2024-09-24 15:57:34,134 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con ID 4.
+2024-09-24 15:57:34,265 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 4 obtenido correctamente.
+2024-09-24 15:57:34,265 INFO  PokedexAPI.Services.UserService - Usuario encontrado: string
+2024-09-24 15:57:34,268 INFO  PokedexAPI.Services.UserService - Intentando actualizar usuario: testuser4
+2024-09-24 15:57:34,274 INFO  PokedexAPI.Repositories.UserRepository - Intentando actualizar el usuario con ID 4.
+2024-09-24 15:57:34,481 INFO  PokedexAPI.Repositories.UserRepository - Usuario con ID 4 actualizado correctamente.
+2024-09-24 15:57:34,481 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Actualización de usuario para el usuario con ID: 4
+2024-09-24 15:57:34,549 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 4
+2024-09-24 15:57:34,549 INFO  PokedexAPI.Services.UserService - Usuario testuser4 actualizado correctamente
+2024-09-24 15:57:34,549 INFO  PokedexAPI.Controllers.AuthController - Usuario con ID 4 actualizado correctamente
+2024-09-24 15:57:44,418 INFO  PokedexAPI.Controllers.AuthController - Intentando obtener todos los usuarios
+2024-09-24 15:57:44,419 INFO  PokedexAPI.Services.UserService - Obteniendo todos los usuarios
+2024-09-24 15:57:44,419 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener todos los usuarios.
+2024-09-24 15:57:44,461 INFO  PokedexAPI.Repositories.UserRepository - Usuarios obtenidos correctamente.
+2024-09-24 15:57:44,462 INFO  PokedexAPI.Services.UserService - Usuarios obtenidos correctamente
+2024-09-24 15:57:44,462 INFO  PokedexAPI.Controllers.AuthController - Usuarios obtenidos correctamente

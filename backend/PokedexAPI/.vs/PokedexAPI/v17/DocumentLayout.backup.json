@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\repositories\\auditlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:repositories\\auditlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\pokedexapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:pokedexapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,32 +34,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuditLogRepository.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Repositories\\AuditLogRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\AuditLogRepository.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Repositories\\AuditLogRepository.cs",
-              "RelativeToolTip": "Repositories\\AuditLogRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:07:15.924Z",
+              "WhenOpened": "2024-09-24T21:47:09.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:07:05.874Z",
+              "DocumentIndex": 5,
+              "Title": "PokedexAPI",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.csproj",
+              "RelativeDocumentMoniker": "PokedexAPI.csproj",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.csproj*",
+              "RelativeToolTip": "PokedexAPI.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-24T21:41:16.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "log4net.config",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\log4net.config",
+              "RelativeDocumentMoniker": "log4net.config",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\log4net.config",
+              "RelativeToolTip": "log4net.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-24T21:06:25.916Z",
               "EditorCaption": ""
             },
             {
@@ -66,33 +83,33 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-24T15:30:57.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAtwBEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAowGMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T02:27:35.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAgwKAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAACMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T23:24:33.658Z",
               "EditorCaption": ""

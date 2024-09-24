@@ -9,15 +9,20 @@ using System.Text;
 using PokedexAPI.Repositories;
 using PokedexAPI.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+ILog log = LogManager.GetLogger(typeof(Program));
+log.Info("Aplicación iniciada, log4net configurado correctamente.");
 
-// Configurar JWT Authentication
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new ArgumentNullException("Jwt:Key is missing from configuration"));
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Configurar log4net
 var loggerRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
 XmlConfigurator.Configure(loggerRepository, new FileInfo("log4net.config"));
 
+// Configurar JWT Authentication
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new ArgumentNullException("Jwt:Key is missing from configuration"));
+
+// Configurar autenticación con JWT
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -35,7 +40,7 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
         ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
