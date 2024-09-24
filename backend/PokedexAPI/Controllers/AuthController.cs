@@ -69,5 +69,38 @@ namespace PokedexAPI.Controllers
             return Ok(new { token = tokenString });
         }
 
+        // Eliminar usuario
+        [Authorize]
+        [HttpDelete("deleteUser/{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var user = await _userService.GetUserByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado" });
+            }
+
+            await _userService.DeleteUserAsync(id);
+            return Ok(new { message = "Usuario eliminado exitosamente" });
+        }
+
+        [Authorize]
+        [HttpPut("updateUser/{id}")]
+        public async Task<IActionResult> UpdateUser(int id, User updatedUser)
+        {
+            var existingUser = await _userService.GetUserByIdAsync(id);
+            if (existingUser == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado" });
+            }
+
+            existingUser.Username = updatedUser.Username;
+            existingUser.PasswordHash = updatedUser.PasswordHash;
+            existingUser.Email = updatedUser.Email;
+
+            await _userService.UpdateUserAsync(existingUser);
+            return Ok(new { message = "Usuario actualizado exitosamente" });
+        }
+
     }
 }

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "PokedexAPI.Controllers.AuthController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Auth/deleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokedexAPI.Controllers.AuthController",
     "Method": "GetUsers",
     "RelativePath": "api/Auth/getUsers",
     "HttpMethod": "GET",
@@ -40,6 +56,27 @@
     "Parameters": [
       {
         "Name": "user",
+        "Type": "DTOs.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PokedexAPI.Controllers.AuthController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Auth/updateUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedUser",
         "Type": "DTOs.User",
         "IsRequired": true
       }
