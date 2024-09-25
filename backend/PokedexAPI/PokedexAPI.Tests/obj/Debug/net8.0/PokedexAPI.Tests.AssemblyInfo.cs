@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PokedexAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PokedexAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e67adebeea2754b111ae23d997cd0d3002a9f188")]
-[assembly: System.Reflection.AssemblyProductAttribute("PokedexAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PokedexAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute("PokedexAPI.Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PokedexAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

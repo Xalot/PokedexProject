@@ -3,31 +3,20 @@
   "WorkspaceRootPath": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1BB026-845D-4FC2-AB3B-AE3DFD396B3A}|PokedexAPI.Tests\\PokedexAPI.Tests.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\pokedexapi.tests\\pokedexapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B1BB026-845D-4FC2-AB3B-AE3DFD396B3A}|PokedexAPI.Tests\\PokedexAPI.Tests.csproj|solutionrelative:pokedexapi.tests\\pokedexapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\services\\pokemonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:services\\pokemonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\services\\ipokemonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:services\\ipokemonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F4BAAB9-9902-4D1B-8136-37C734B189B1}|..\\DTOs\\DTOs.csproj|c:\\trabajo\\pokedexproject\\backend\\dtos\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{922B1A1A-F4C7-4B4D-B97D-3BDEAA6E5236}|PokedexAPI.csproj|solutionrelative:services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1BB026-845D-4FC2-AB3B-AE3DFD396B3A}|PokedexAPI.Tests\\PokedexAPI.Tests.csproj|c:\\trabajo\\pokedexproject\\backend\\pokedexapi\\pokedexapi.tests\\pokemonservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1BB026-845D-4FC2-AB3B-AE3DFD396B3A}|PokedexAPI.Tests\\PokedexAPI.Tests.csproj|solutionrelative:pokedexapi.tests\\pokemonservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,97 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PokemonController.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\PokemonController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PokemonController.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\PokemonController.cs",
-              "RelativeToolTip": "Controllers\\PokemonController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:50:56.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAA7wJAAAAARAAAAAAAAAA==",
+              "Title": "PokedexAPI.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\PokedexAPI.AssemblyInfo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAtwBAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:46:53.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T19:18:31.757Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:38:34.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPokemonService.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\IPokemonService.cs",
-              "RelativeDocumentMoniker": "Services\\IPokemonService.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\IPokemonService.cs",
-              "RelativeToolTip": "Services\\IPokemonService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:29:56.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T18:30:21.929Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PokemonService.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\PokemonService.cs",
-              "RelativeDocumentMoniker": "Services\\PokemonService.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\PokemonService.cs",
-              "RelativeToolTip": "Services\\PokemonService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Title": "PokemonServiceTests.cs",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.Tests\\PokemonServiceTests.cs",
+              "RelativeDocumentMoniker": "PokedexAPI.Tests\\PokemonServiceTests.cs",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.Tests\\PokemonServiceTests.cs",
+              "RelativeToolTip": "PokedexAPI.Tests\\PokemonServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:28:54.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T15:10:02.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\IUserService.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Services\\IUserService.cs",
-              "RelativeToolTip": "Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:20:36.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Pokemon.cs",
-              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\Pokemon.cs",
-              "RelativeDocumentMoniker": "..\\DTOs\\Pokemon.cs",
-              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\DTOs\\Pokemon.cs",
-              "RelativeToolTip": "..\\DTOs\\Pokemon.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAmwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:14:43.854Z",
+              "DocumentIndex": 0,
+              "Title": "PokedexAPI.Tests.csproj",
+              "DocumentMoniker": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.Tests\\PokedexAPI.Tests.csproj",
+              "RelativeDocumentMoniker": "PokedexAPI.Tests\\PokedexAPI.Tests.csproj",
+              "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\PokedexAPI.Tests\\PokedexAPI.Tests.csproj",
+              "RelativeToolTip": "PokedexAPI.Tests\\PokedexAPI.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-25T15:06:08.958Z",
               "EditorCaption": ""
             }
           ]
