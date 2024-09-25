@@ -17,3 +17,22 @@
 2024-09-25 08:53:41,310 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Consulta de Pokémon por nombre: venusaur para el usuario con ID: 3
 2024-09-25 08:53:41,404 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 3
 2024-09-25 08:53:41,405 INFO  PokedexAPI.Controllers.PokemonController - Pokémon venusaur obtenido correctamente
+2024-09-25 17:03:19,753 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
+2024-09-25 17:04:59,657 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-25 17:04:59,657 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-25 17:04:59,658 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-25 17:05:02,141 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-25 17:05:02,141 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-25 17:05:02,186 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-25 17:05:22,627 INFO  PokedexAPI.Controllers.AuthController - Intentando obtener todos los usuarios
+2024-09-25 17:05:22,628 INFO  PokedexAPI.Services.UserService - Obteniendo todos los usuarios
+2024-09-25 17:05:22,628 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener todos los usuarios.
+2024-09-25 17:05:22,661 INFO  PokedexAPI.Repositories.UserRepository - Usuarios obtenidos correctamente.
+2024-09-25 17:05:22,661 INFO  PokedexAPI.Services.UserService - Usuarios obtenidos correctamente
+2024-09-25 17:05:22,662 INFO  PokedexAPI.Controllers.AuthController - Usuarios obtenidos correctamente
+2024-09-25 17:05:38,304 INFO  PokedexAPI.Controllers.PokemonController - Intentando obtener Pokémon por ID: 4
+2024-09-25 17:05:38,305 INFO  PokedexAPI.Services.PokemonService - Intentando obtener Pokémon por ID: 4
+2024-09-25 17:05:39,103 INFO  PokedexAPI.Services.PokemonService - Pokémon charmander obtenido exitosamente
+2024-09-25 17:05:39,104 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Consulta de Pokémon por ID para el usuario con ID: 4
+2024-09-25 17:05:39,445 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 4
+2024-09-25 17:05:39,445 INFO  PokedexAPI.Controllers.PokemonController - Pokémon charmander obtenido correctamente

@@ -44,53 +44,65 @@ namespace PokedexAPI.Services
                     var jsonContent = await response.Content.ReadAsStringAsync();
                     dynamic pokemonData = JsonConvert.DeserializeObject(jsonContent);
 
-                    // Mapeamos los datos de la PokeAPI al modelo Pokemon
+                    if (pokemonData == null) return null;
+
                     var pokemon = new Pokemon
                     {
-                        Id = pokemonData.id,
-                        Nombre = pokemonData.name,
-                        Imagenfrontal = pokemonData.sprites.front_default,
+                        Id = pokemonData.id ?? 0,
+                        Nombre = pokemonData.name ?? "Desconocido",
+                        Imagenfrontal = pokemonData.sprites?.front_default ?? string.Empty,
                         Tipos = new List<string>(),
-                        Altura = pokemonData.height,
-                        Peso = pokemonData.weight
+                        Altura = pokemonData.height ?? 0,
+                        Peso = pokemonData.weight ?? 0
                     };
 
-                    foreach (var typeInfo in pokemonData.types)
+                    if (pokemonData.types != null)
                     {
-                        pokemon.Tipos.Add((string)typeInfo.type.name);
+                        foreach (var typeInfo in pokemonData.types)
+                        {
+                            pokemon.Tipos.Add((string)typeInfo?.type?.name ?? "Desconocido");
+                        }
                     }
 
-                    // Obtener la descripción desde otra parte del API (species)
-                    var speciesResponse = await _httpClient.GetAsync(pokemonData.species.url.ToString());
-                    if (speciesResponse.IsSuccessStatusCode)
+                    var speciesUrl = pokemonData.species?.url?.ToString();
+                    if (!string.IsNullOrEmpty(speciesUrl))
                     {
-                        var speciesJson = await speciesResponse.Content.ReadAsStringAsync();
-                        dynamic speciesData = JsonConvert.DeserializeObject(speciesJson);
-
-                        // Obtener la primera descripción en español
-                        foreach (var flavorTextEntry in speciesData.flavor_text_entries)
+                        var speciesResponse = await _httpClient.GetAsync(speciesUrl);
+                        if (speciesResponse.IsSuccessStatusCode)
                         {
-                            if (flavorTextEntry.language.name == "es")
+                            var speciesJson = await speciesResponse.Content.ReadAsStringAsync();
+                            dynamic speciesData = JsonConvert.DeserializeObject(speciesJson);
+
+                            if (speciesData?.flavor_text_entries != null)
                             {
-                                pokemon.Descripcion = flavorTextEntry.flavor_text;
-                                break;
+                                foreach (var flavorTextEntry in speciesData.flavor_text_entries)
+                                {
+                                    if (flavorTextEntry.language.name == "es")
+                                    {
+                                        pokemon.Descripcion = flavorTextEntry.flavor_text ?? "Sin descripción";
+                                        break;
+                                    }
+                                }
                             }
-                        }
 
-                        // Obtener la cadena evolutiva
-                        var evolutionResponse = await _httpClient.GetAsync(speciesData.evolution_chain.url.ToString());
-                        if (evolutionResponse.IsSuccessStatusCode)
-                        {
-                            var evolutionJson = await evolutionResponse.Content.ReadAsStringAsync();
-                            dynamic evolutionData = JsonConvert.DeserializeObject(evolutionJson);
-
-                            pokemon.Cadenaevolucion = new Cadenadeevolucion
+                            var evolutionUrl = speciesData?.evolution_chain?.url?.ToString();
+                            if (!string.IsNullOrEmpty(evolutionUrl))
                             {
-                                PokemonBebe = evolutionData.chain.species.name,
-                                PrimeraEvolucion = evolutionData.chain.evolves_to.Count > 0 ? evolutionData.chain.evolves_to[0].species.name : null,
-                                SiguienteEvolucion = evolutionData.chain.evolves_to.Count > 0 && evolutionData.chain.evolves_to[0].evolves_to.Count > 0 ?
-                                                      evolutionData.chain.evolves_to[0].evolves_to[0].species.name : null
-                            };
+                                var evolutionResponse = await _httpClient.GetAsync(evolutionUrl);
+                                if (evolutionResponse.IsSuccessStatusCode)
+                                {
+                                    var evolutionJson = await evolutionResponse.Content.ReadAsStringAsync();
+                                    dynamic evolutionData = JsonConvert.DeserializeObject(evolutionJson);
+
+                                    pokemon.Cadenaevolucion = new Cadenadeevolucion
+                                    {
+                                        PokemonBebe = evolutionData.chain?.species?.name ?? "Desconocido",
+                                        PrimeraEvolucion = evolutionData.chain?.evolves_to?.Count > 0 ? evolutionData.chain.evolves_to[0].species.name : null,
+                                        SiguienteEvolucion = evolutionData.chain?.evolves_to?.Count > 0 && evolutionData.chain.evolves_to[0].evolves_to?.Count > 0 ?
+                                                            evolutionData.chain.evolves_to[0].evolves_to[0].species.name : null
+                                    };
+                                }
+                            }
                         }
                     }
 
@@ -109,5 +121,6 @@ namespace PokedexAPI.Services
                 throw;
             }
         }
+
     }
 }
