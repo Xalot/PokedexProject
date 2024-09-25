@@ -9,15 +9,14 @@ using System.Text;
 using PokedexAPI.Repositories;
 using PokedexAPI.Services;
 
-ILog log = LogManager.GetLogger(typeof(Program));
-log.Info("Aplicación iniciada, log4net configurado correctamente.");
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurar log4net
 var loggerRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
 XmlConfigurator.Configure(loggerRepository, new FileInfo("log4net.config"));
+
+ILog log = LogManager.GetLogger(typeof(Program));
+log.Info("Aplicación iniciada, log4net configurado correctamente.");
 
 // Configurar JWT Authentication
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new ArgumentNullException("Jwt:Key is missing from configuration"));
@@ -61,7 +60,11 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 // Registrar el servicio de usuarios
 builder.Services.AddScoped<IUserService, UserService>();
 
+// Registrar el servicio de auditoría
 builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
+
+// Registrar el servicio de Pokémon
+builder.Services.AddHttpClient<IPokemonService, PokemonService>();
 
 // Añadir Swagger con JWT configuración
 builder.Services.AddSwaggerGen(c =>

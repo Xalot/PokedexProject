@@ -140,3 +140,4 @@ C:\Trabajo\PokedexProject\backend\PokedexAPI\obj\Debug\net8.0\ref\PokedexAPI.dll
 C:\Trabajo\PokedexProject\backend\PokedexAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Trabajo\PokedexProject\backend\PokedexAPI\bin\Debug\net8.0\log4net.config
 C:\Trabajo\PokedexProject\backend\PokedexAPI\bin\Debug\net8.0\log4net.dll
+C:\Trabajo\PokedexProject\backend\PokedexAPI\bin\Debug\net8.0\Newtonsoft.Json.dll

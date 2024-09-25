@@ -1,0 +1,19 @@
+2024-09-25 08:52:08,157 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
+2024-09-25 08:52:52,587 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-25 08:52:52,590 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-25 08:52:52,592 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-25 08:52:54,894 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-25 08:52:54,894 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-25 08:52:54,945 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-25 08:53:21,203 INFO  PokedexAPI.Controllers.PokemonController - Intentando obtener Pokémon por ID: 3
+2024-09-25 08:53:21,204 INFO  PokedexAPI.Services.PokemonService - Intentando obtener Pokémon por ID: 3
+2024-09-25 08:53:22,287 INFO  PokedexAPI.Services.PokemonService - Pokémon venusaur obtenido exitosamente
+2024-09-25 08:53:22,289 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Consulta de Pokémon por ID para el usuario con ID: 3
+2024-09-25 08:53:22,851 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 3
+2024-09-25 08:53:22,851 INFO  PokedexAPI.Controllers.PokemonController - Pokémon venusaur obtenido correctamente
+2024-09-25 08:53:40,994 INFO  PokedexAPI.Controllers.PokemonController - Intentando obtener Pokémon por nombre: venusaur
+2024-09-25 08:53:40,997 INFO  PokedexAPI.Services.PokemonService - Intentando obtener Pokémon por nombre: venusaur
+2024-09-25 08:53:41,309 INFO  PokedexAPI.Services.PokemonService - Pokémon venusaur obtenido exitosamente
+2024-09-25 08:53:41,310 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Consulta de Pokémon por nombre: venusaur para el usuario con ID: 3
+2024-09-25 08:53:41,404 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 3
+2024-09-25 08:53:41,405 INFO  PokedexAPI.Controllers.PokemonController - Pokémon venusaur obtenido correctamente
