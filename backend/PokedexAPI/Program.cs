@@ -44,6 +44,19 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// Configurar CORS
+var corsPolicy = "AllowSpecificOrigin";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: corsPolicy,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:3000", "https://mi-frontend.com")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+});
+
 // Servicio de autorización
 builder.Services.AddAuthorization();
 
@@ -116,6 +129,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Aplicar la política de CORS
+app.UseCors(corsPolicy);
 
 app.UseAuthentication();
 

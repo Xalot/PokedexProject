@@ -321,3 +321,4 @@ Error Number:547,State:0,Class:16
 2024-09-25 18:17:18,828 INFO  PokedexAPI.Repositories.AuditLogRepository - Registrando acción: Consulta de Pokémon por ID para el usuario con ID: 3
 2024-09-25 18:17:18,837 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 3
 2024-09-25 18:17:18,837 INFO  PokedexAPI.Controllers.PokemonController - Pokémon venusaur obtenido correctamente
+2024-09-25 18:46:32,285 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
