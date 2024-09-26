@@ -116,7 +116,7 @@ Debes actualizar la cadena de conexión en el archivo `appsettings.json` para re
     "Audience": "TuDominio.com"
   }
 }
-
+```
 ---
 
 ## Pasos de Instalación
