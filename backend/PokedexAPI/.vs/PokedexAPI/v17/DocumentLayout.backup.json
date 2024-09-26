@@ -38,8 +38,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-26T01:00:33.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T01:00:33.022Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Trabajo\\PokedexProject\\backend\\PokedexAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T23:50:46.243Z",
               "EditorCaption": ""
