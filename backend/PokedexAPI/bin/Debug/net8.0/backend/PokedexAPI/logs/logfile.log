@@ -322,3 +322,23 @@ Error Number:547,State:0,Class:16
 2024-09-25 18:17:18,837 INFO  PokedexAPI.Repositories.AuditLogRepository - Acción registrada correctamente para el usuario con ID: 3
 2024-09-25 18:17:18,837 INFO  PokedexAPI.Controllers.PokemonController - Pokémon venusaur obtenido correctamente
 2024-09-25 18:46:32,285 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
+2024-09-26 00:26:21,985 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
+2024-09-26 00:28:05,960 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-26 00:28:05,961 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-26 00:28:05,963 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-26 00:28:08,058 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-26 00:28:08,059 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-26 00:28:08,100 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-26 00:52:33,275 INFO  Program - Aplicación iniciada, log4net configurado correctamente.
+2024-09-26 00:53:38,264 INFO  PokedexAPI.Controllers.AuthController - Intentando iniciar sesión para el usuario: testuser2
+2024-09-26 00:53:38,266 INFO  PokedexAPI.Services.UserService - Obteniendo usuario con nombre de usuario: testuser2
+2024-09-26 00:53:38,267 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener el usuario con nombre de usuario: testuser2
+2024-09-26 00:53:41,352 INFO  PokedexAPI.Repositories.UserRepository - Usuario testuser2 obtenido correctamente.
+2024-09-26 00:53:41,353 INFO  PokedexAPI.Services.UserService - Usuario encontrado: testuser2
+2024-09-26 00:53:41,397 INFO  PokedexAPI.Controllers.AuthController - Usuario testuser2 ha iniciado sesión exitosamente
+2024-09-26 00:54:06,434 INFO  PokedexAPI.Controllers.AuthController - Intentando obtener todos los usuarios
+2024-09-26 00:54:06,434 INFO  PokedexAPI.Services.UserService - Obteniendo todos los usuarios
+2024-09-26 00:54:06,435 INFO  PokedexAPI.Repositories.UserRepository - Intentando obtener todos los usuarios.
+2024-09-26 00:54:06,464 INFO  PokedexAPI.Repositories.UserRepository - Usuarios obtenidos correctamente.
+2024-09-26 00:54:06,464 INFO  PokedexAPI.Services.UserService - Usuarios obtenidos correctamente
+2024-09-26 00:54:06,464 INFO  PokedexAPI.Controllers.AuthController - Usuarios obtenidos correctamente
