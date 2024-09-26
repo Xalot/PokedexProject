@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 
 namespace PokedexAPI.Controllers
 {
+    /// <summary>
+    /// Controlador responsable de la autenticación de usuarios y gestión de JWT.
+    /// Permite registrar, iniciar sesión y gestionar usuarios.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
@@ -20,12 +24,23 @@ namespace PokedexAPI.Controllers
         private readonly IUserService _userService;
         private readonly IConfiguration _configuration;
 
+        /// <summary>
+        /// Constructor del controlador de autenticación.
+        /// </summary>
+        /// <param name="userService">Servicio de usuarios inyectado.</param>
+        /// <param name="configuration">Configuración de la aplicación.</param>
         public AuthController(IUserService userService, IConfiguration configuration)
         {
             _userService = userService;
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Obtiene todos los usuarios (requiere autorización).
+        /// </summary>
+        /// <returns>Lista de usuarios en el sistema.</returns>
+        /// <response code="200">Usuarios obtenidos exitosamente.</response>
+        /// <response code="500">Error interno del servidor.</response>
         [Authorize]
         [HttpGet("getUsers")]
         public async Task<IActionResult> GetUsers()
@@ -44,6 +59,13 @@ namespace PokedexAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Registra un nuevo usuario en el sistema.
+        /// </summary>
+        /// <param name="user">Objeto de usuario a registrar.</param>
+        /// <returns>Mensaje de éxito o error.</returns>
+        /// <response code="200">Usuario registrado exitosamente.</response>
+        /// <response code="500">Error interno del servidor.</response>
         // Registro de usuario
         [HttpPost("register")]
         public async Task<IActionResult> Register(User user)
@@ -62,6 +84,15 @@ namespace PokedexAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Inicia sesión en el sistema y genera un token JWT.
+        /// </summary>
+        /// <param name="username">Nombre de usuario.</param>
+        /// <param name="password">Contraseña del usuario.</param>
+        /// <returns>Token JWT si las credenciales son correctas.</returns>
+        /// <response code="200">Inicio de sesión exitoso con token JWT generado.</response>
+        /// <response code="401">Credenciales incorrectas.</response>
+        /// <response code="500">Error interno del servidor.</response>
         [HttpPost("login")]
         public async Task<IActionResult> Login(string username, string password)
         {
@@ -104,6 +135,14 @@ namespace PokedexAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Elimina un usuario por su ID (requiere autorización).
+        /// </summary>
+        /// <param name="id">ID del usuario a eliminar.</param>
+        /// <returns>Mensaje de éxito o error.</returns>
+        /// <response code="200">Usuario eliminado exitosamente.</response>
+        /// <response code="404">Usuario no encontrado.</response>
+        /// <response code="500">Error interno del servidor.</response>
         // Eliminar usuario
         [Authorize]
         [HttpDelete("deleteUser/{id}")]
@@ -130,6 +169,15 @@ namespace PokedexAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Actualiza los datos de un usuario por su ID (requiere autorización).
+        /// </summary>
+        /// <param name="id">ID del usuario a actualizar.</param>
+        /// <param name="updatedUser">Datos actualizados del usuario.</param>
+        /// <returns>Mensaje de éxito o error.</returns>
+        /// <response code="200">Usuario actualizado exitosamente.</response>
+        /// <response code="404">Usuario no encontrado.</response>
+        /// <response code="500">Error interno del servidor.</response>
         [Authorize]
         [HttpPut("updateUser/{id}")]
         public async Task<IActionResult> UpdateUser(int id, User updatedUser)

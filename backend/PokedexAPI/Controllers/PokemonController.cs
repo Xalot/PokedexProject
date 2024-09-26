@@ -6,6 +6,10 @@ using PokedexAPI.Repositories;
 
 namespace PokedexAPI.Controllers
 {
+    /// <summary>
+    /// Controlador para realizar operaciones relacionadas con los Pokémon.
+    /// Proporciona endpoints para consultar Pokémon por su ID o por nombre.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class PokemonController : ControllerBase
@@ -14,12 +18,25 @@ namespace PokedexAPI.Controllers
         private readonly IPokemonService _pokemonService;
         private readonly IAuditLogRepository _auditLogRepository;  // Servicio de auditoría
 
+        /// <summary>
+        /// Constructor del controlador de Pokémon.
+        /// </summary>
+        /// <param name="pokemonService">Servicio para realizar operaciones sobre los Pokémon.</param>
+        /// <param name="auditLogRepository">Servicio para registrar auditorías.</param>
         public PokemonController(IPokemonService pokemonService, IAuditLogRepository auditLogRepository)
         {
             _pokemonService = pokemonService;
             _auditLogRepository = auditLogRepository;  // Inyectamos el servicio de auditoría
         }
 
+        /// <summary>
+        /// Obtiene un Pokémon por su ID.
+        /// </summary>
+        /// <param name="id">El ID del Pokémon que se quiere obtener.</param>
+        /// <returns>Retorna los detalles del Pokémon si se encuentra, o un estado 404 si no se encuentra.</returns>
+        /// <response code="200">Pokémon encontrado exitosamente.</response>
+        /// <response code="404">Pokémon no encontrado.</response>
+        /// <response code="500">Error interno del servidor.</response>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPokemonById(int id)
         {
@@ -47,6 +64,14 @@ namespace PokedexAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Obtiene un Pokémon por su nombre.
+        /// </summary>
+        /// <param name="name">El nombre del Pokémon que se quiere obtener.</param>
+        /// <returns>Retorna los detalles del Pokémon si se encuentra, o un estado 404 si no se encuentra.</returns>
+        /// <response code="200">Pokémon encontrado exitosamente.</response>
+        /// <response code="404">Pokémon no encontrado.</response>
+        /// <response code="500">Error interno del servidor.</response>
         [HttpGet("nombre/{name}")]
         public async Task<IActionResult> GetPokemonByName(string name)
         {

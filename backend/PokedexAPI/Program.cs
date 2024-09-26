@@ -66,7 +66,7 @@ builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
 // Registrar el servicio de Pokémon
 builder.Services.AddHttpClient<IPokemonService, PokemonService>();
 
-// Añadir Swagger con JWT configuración
+// Configurar Swagger con comentarios XML
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "PokedexAPI", Version = "v1" });
@@ -75,7 +75,7 @@ builder.Services.AddSwaggerGen(c =>
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
-        Description = "Por favor ingrese 'Bearer' [espacio] y luego el token",
+        Description = "Por favor ingrese la palabra 'Bearer' [espacio] y luego el token",
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,
         BearerFormat = "JWT",
@@ -96,6 +96,11 @@ builder.Services.AddSwaggerGen(c =>
             new string[] {}
         }
     });
+
+    // Leer el archivo de comentarios XML generado por el proyecto
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
 });
 
 var app = builder.Build();

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PokedexAPI</name>
+    </assembly>
+    <members>
+        <member name="T:PokedexAPI.Controllers.AuthController">
+            <summary>
+            Controlador responsable de la autenticación de usuarios y gestión de JWT.
+            Permite registrar, iniciar sesión y gestionar usuarios.
+            </summary>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.#ctor(PokedexAPI.Services.IUserService,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor del controlador de autenticación.
+            </summary>
+            <param name="userService">Servicio de usuarios inyectado.</param>
+            <param name="configuration">Configuración de la aplicación.</param>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.GetUsers">
+            <summary>
+            Obtiene todos los usuarios (requiere autorización).
+            </summary>
+            <returns>Lista de usuarios en el sistema.</returns>
+            <response code="200">Usuarios obtenidos exitosamente.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.Register(DTOs.User)">
+            <summary>
+            Registra un nuevo usuario en el sistema.
+            </summary>
+            <param name="user">Objeto de usuario a registrar.</param>
+            <returns>Mensaje de éxito o error.</returns>
+            <response code="200">Usuario registrado exitosamente.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.Login(System.String,System.String)">
+            <summary>
+            Inicia sesión en el sistema y genera un token JWT.
+            </summary>
+            <param name="username">Nombre de usuario.</param>
+            <param name="password">Contraseña del usuario.</param>
+            <returns>Token JWT si las credenciales son correctas.</returns>
+            <response code="200">Inicio de sesión exitoso con token JWT generado.</response>
+            <response code="401">Credenciales incorrectas.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.DeleteUser(System.Int32)">
+            <summary>
+            Elimina un usuario por su ID (requiere autorización).
+            </summary>
+            <param name="id">ID del usuario a eliminar.</param>
+            <returns>Mensaje de éxito o error.</returns>
+            <response code="200">Usuario eliminado exitosamente.</response>
+            <response code="404">Usuario no encontrado.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:PokedexAPI.Controllers.AuthController.UpdateUser(System.Int32,DTOs.User)">
+            <summary>
+            Actualiza los datos de un usuario por su ID (requiere autorización).
+            </summary>
+            <param name="id">ID del usuario a actualizar.</param>
+            <param name="updatedUser">Datos actualizados del usuario.</param>
+            <returns>Mensaje de éxito o error.</returns>
+            <response code="200">Usuario actualizado exitosamente.</response>
+            <response code="404">Usuario no encontrado.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="T:PokedexAPI.Controllers.PokemonController">
+            <summary>
+            Controlador para realizar operaciones relacionadas con los Pokémon.
+            Proporciona endpoints para consultar Pokémon por su ID o por nombre.
+            </summary>
+        </member>
+        <member name="M:PokedexAPI.Controllers.PokemonController.#ctor(PokedexAPI.Services.IPokemonService,PokedexAPI.Repositories.IAuditLogRepository)">
+            <summary>
+            Constructor del controlador de Pokémon.
+            </summary>
+            <param name="pokemonService">Servicio para realizar operaciones sobre los Pokémon.</param>
+            <param name="auditLogRepository">Servicio para registrar auditorías.</param>
+        </member>
+        <member name="M:PokedexAPI.Controllers.PokemonController.GetPokemonById(System.Int32)">
+            <summary>
+            Obtiene un Pokémon por su ID.
+            </summary>
+            <param name="id">El ID del Pokémon que se quiere obtener.</param>
+            <returns>Retorna los detalles del Pokémon si se encuentra, o un estado 404 si no se encuentra.</returns>
+            <response code="200">Pokémon encontrado exitosamente.</response>
+            <response code="404">Pokémon no encontrado.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:PokedexAPI.Controllers.PokemonController.GetPokemonByName(System.String)">
+            <summary>
+            Obtiene un Pokémon por su nombre.
+            </summary>
+            <param name="name">El nombre del Pokémon que se quiere obtener.</param>
+            <returns>Retorna los detalles del Pokémon si se encuentra, o un estado 404 si no se encuentra.</returns>
+            <response code="200">Pokémon encontrado exitosamente.</response>
+            <response code="404">Pokémon no encontrado.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="T:PokedexAPI.Migrations.Inicial">
+            <inheritdoc />
+        </member>
+        <member name="M:PokedexAPI.Migrations.Inicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PokedexAPI.Migrations.Inicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PokedexAPI.Migrations.Inicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
