@@ -13,6 +13,7 @@ Este es un proyecto de **Pokedex** que utiliza la [PokeAPI](https://pokeapi.co/)
 7. [Pruebas Unitarias](#pruebas-unitarias)
 8. [Instrucciones de Uso](#instrucciones-de-uso)
 9. [Logs de Auditoría](#logs-de-auditoría)
+10.[ Estructura del Proyecto]
 
 ## Descripción General
 
@@ -186,3 +187,9 @@ Authorization: Bearer {token}
 Los logs de auditoría se almacenan en la base de datos y registran todas las acciones de los usuarios, como consultas y modificaciones en los datos de los Pokémon o usuarios.
 
 También se generan logs en archivos de texto que se pueden encontrar en la carpeta _logs/_ dentro del proyecto, configurados a través de log4net.
+
+## Estructura del Proyecto
+
+La estructura completa de carpetas y proyectos (backend ASP.NET Core y frontend Angular) se describe en detalle en el siguiente archivo:
+
+[📁 Ver estructura general del proyecto](./ESTRUCTURA_GENERAL.md)
